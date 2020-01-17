@@ -5,10 +5,6 @@ class Questions extends Component {
     render() {
         const { colour, day, soup, updateColour, updateDay, updateSoup, getResult } = this.props.props;
 
-        const testFunc = () => {
-            console.log(this.props.props.state);
-        }
-
         return (
             <>
                 <form>
@@ -50,7 +46,6 @@ class Questions extends Component {
                         </div>
                         <input className="control" type="submit" value="Calculate" onClick={getResult} />
                     </section>
-                    {testFunc()}
                 </form>
             </>
         )
