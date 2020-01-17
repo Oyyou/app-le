@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/app-le/static/css/main.b7ecc2b8.chunk.css",
+    "main.js": "/app-le/static/js/main.8f4ae037.chunk.js",
+    "main.js.map": "/app-le/static/js/main.8f4ae037.chunk.js.map",
+    "runtime-main.js": "/app-le/static/js/runtime-main.27e75d3e.js",
+    "runtime-main.js.map": "/app-le/static/js/runtime-main.27e75d3e.js.map",
+    "static/js/2.ea3240f0.chunk.js": "/app-le/static/js/2.ea3240f0.chunk.js",
+    "static/js/2.ea3240f0.chunk.js.map": "/app-le/static/js/2.ea3240f0.chunk.js.map",
+    "index.html": "/app-le/index.html",
+    "precache-manifest.bd21c36ee611b6ec585e8311dbcd7e02.js": "/app-le/precache-manifest.bd21c36ee611b6ec585e8311dbcd7e02.js",
+    "service-worker.js": "/app-le/service-worker.js",
+    "static/css/main.b7ecc2b8.chunk.css.map": "/app-le/static/css/main.b7ecc2b8.chunk.css.map",
+    "static/js/2.ea3240f0.chunk.js.LICENSE": "/app-le/static/js/2.ea3240f0.chunk.js.LICENSE",
+    "static/media/Apple.png": "/app-le/static/media/Apple.3d3d9ef3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.27e75d3e.js",
+    "static/js/2.ea3240f0.chunk.js",
+    "static/css/main.b7ecc2b8.chunk.css",
+    "static/js/main.8f4ae037.chunk.js"
+  ]
+}
