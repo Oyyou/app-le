@@ -15,7 +15,7 @@ class Questions extends Component {
                     <h1>Pick your favourites:</h1>
                     <section className="options">
                         <div className="option">
-                            <select className="control dropdown" value={colour} onChange={updateColour}>
+                            <select className={"control dropdown" + (this.props.props.state.errors.colour !== "" ? " error" : "")} value={colour} onChange={updateColour}>
                                 <option value="0" defaultValue>(Colour)</option>
                                 <option value="Blorange">Blorange</option>
                                 <option value="Fled">Fled</option>
@@ -26,7 +26,7 @@ class Questions extends Component {
                             {this.props.props.state.errors.colour !== "" && <p>{this.props.props.state.errors.colour}</p>}
                         </div>
                         <div className="option">
-                            <select className="control dropdown" value={day} onChange={updateDay}>
+                            <select className={"control dropdown" + (this.props.props.state.errors.day !== "" ? " error" : "")}  value={day} onChange={updateDay}>
                                 <option value="0" defaultValue>(Day)</option>
                                 <option value="Flensday">Flensday</option>
                                 <option value="Floopday">Floopday</option>
@@ -39,7 +39,7 @@ class Questions extends Component {
                             {this.props.props.state.errors.day !== "" && <p>{this.props.props.state.errors.day}</p>}
                         </div>
                         <div className="option">
-                            <select className="control dropdown" value={soup} onChange={updateSoup}>
+                            <select className={"control dropdown" + (this.props.props.state.errors.soup !== "" ? " error" : "")}  value={soup} onChange={updateSoup}>
                                 <option value="0" defaultValue>(Soup)</option>
                                 <option value="Apple">Apple</option>
                                 <option value="Apple">Apple</option>

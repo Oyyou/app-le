@@ -47,9 +47,9 @@ class App extends Component {
   getResult(e) {
     e.preventDefault();
 
-    let colourError = this.state.colour === "";
-    let dayError = this.state.day === "";
-    let soupError = this.state.soup === "";
+    let colourError = this.state.colour.length < 2;
+    let dayError = this.state.day.length < 2;
+    let soupError = this.state.soup.length < 2;
 
     this.setState((state, props) => ({
       errors: {
@@ -57,6 +57,7 @@ class App extends Component {
         day: dayError ? "I don't think that's a day, fren" : "",
         soup: soupError ? "(Soup)! Sounds tasty.." : "",
       },
+      result: "",
     }));
 
     let isError = colourError || dayError || soupError;
