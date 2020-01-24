@@ -27,9 +27,10 @@ class App extends Component {
       <Router>
         <Nav />
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/facts" component={Facts} />
-          <Route exact path="/calculator" component={Calculator} />
+          <Route exact path="/app-le" component={Home} />
+          <Route exact path="/app-le/facts" component={Facts} />
+          <Route exact path="/app-le/calculator" component={Calculator} />
+          <Redirect to="/app-le" />
         </Switch>
       </Router>
       </>
