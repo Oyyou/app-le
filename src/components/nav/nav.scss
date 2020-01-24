@@ -1,0 +1,36 @@
+nav {
+    height: 10vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    height: 100%;
+    align-items: center;
+}
+
+.link {
+    padding: 10px;
+    text-decoration: none;
+    font-size: calc(10px + 2vmin);
+
+    &:hover {
+        color: red;
+    }
+}
+
+.logo {
+    height: 100%;
+
+    img {
+        width: auto;
+        height: 100%;
+    }
+}

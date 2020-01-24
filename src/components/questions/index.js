@@ -5,6 +5,29 @@ class Questions extends Component {
     render() {
         const { colour, day, soup, updateColour, updateDay, updateSoup, getResult } = this.props.props;
 
+
+        const template = {
+            
+        };
+
+        const colours = [
+            "Blorange",
+            "Feld",
+            "Muurple",
+            "Splank",
+            "Jellow",
+        ];
+
+        const days = [
+            "Flensday",
+            "Floopday",
+            "Flangaday",
+            "Fluteday",
+            "Flinkday",
+            "Flynsday",
+            "Friday",
+        ]
+
         return (
             <>
                 <form>
@@ -13,24 +36,20 @@ class Questions extends Component {
                         <div className="option">
                             <select className={"control dropdown" + (this.props.props.state.errors.colour !== "" ? " error" : "")} value={colour} onChange={updateColour}>
                                 <option value="0" defaultValue>(Colour)</option>
-                                <option value="Blorange">Blorange</option>
-                                <option value="Fled">Fled</option>
-                                <option value="Muurple">Muurple</option>
-                                <option value="Splank">Splank</option>
-                                <option value="Jellow">Jellow</option>
+                                {colours.map(c =>
+                                {
+                                    return (<option value={c}>{c}</option>)
+                                })}
                             </select>
                             {this.props.props.state.errors.colour !== "" && <p>{this.props.props.state.errors.colour}</p>}
                         </div>
                         <div className="option">
                             <select className={"control dropdown" + (this.props.props.state.errors.day !== "" ? " error" : "")}  value={day} onChange={updateDay}>
                                 <option value="0" defaultValue>(Day)</option>
-                                <option value="Flensday">Flensday</option>
-                                <option value="Floopday">Floopday</option>
-                                <option value="Flangaday">Flangaday</option>
-                                <option value="Fluteday">Fluteday</option>
-                                <option value="Flinkday">Flinkday</option>
-                                <option value="Flynsday">Flynsday</option>
-                                <option value="Friday">Friday</option>
+                                {days.map(c =>
+                                {
+                                    return (<option value={c}>{c}</option>)
+                                })}
                             </select>
                             {this.props.props.state.errors.day !== "" && <p>{this.props.props.state.errors.day}</p>}
                         </div>
