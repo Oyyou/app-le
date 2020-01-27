@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
+import './facts.scss';
 
 class Facts extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     render(){
         return (

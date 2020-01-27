@@ -1,6 +1,10 @@
 @font-face {
-  font-family: 'Roboto', sans-serif;  
+  font-family: 'Roboto', 'Poppins', sans-serif;
   src: url("https://fonts.googleapis.com/css?family=Roboto&display=swap");  
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -12,6 +16,7 @@ body {
   background-color: #DDFFEF;
   margin: 0 auto;
   width: 80vw;
+  max-width: 1024px;
 }
 
 code {
@@ -19,6 +24,12 @@ code {
     monospace;
 }
 
-p {
-  font-family: 'Roboto', sans-serif;
+.header {
+  text-align: center;
+}
+
+@media (max-width: 740px) {
+  body {
+    width: 100vw;
+  }
 }

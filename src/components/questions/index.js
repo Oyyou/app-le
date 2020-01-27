@@ -5,11 +5,6 @@ class Questions extends Component {
     render() {
         const { colour, day, soup, updateColour, updateDay, updateSoup, getResult } = this.props.props;
 
-
-        const template = {
-            
-        };
-
         const colours = [
             "Blorange",
             "Feld",
