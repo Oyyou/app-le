@@ -31,9 +31,9 @@ class Questions extends Component {
                         <div className="option">
                             <select className={"control dropdown" + (this.props.props.state.errors.colour !== "" ? " error" : "")} value={colour} onChange={updateColour}>
                                 <option value="0" defaultValue>(Colour)</option>
-                                {colours.map(c =>
+                                {colours.map((c, i) =>
                                 {
-                                    return (<option value={c}>{c}</option>)
+                                    return (<option value={c} key={i}>{c}</option>)
                                 })}
                             </select>
                             {this.props.props.state.errors.colour !== "" && <p>{this.props.props.state.errors.colour}</p>}
@@ -41,9 +41,9 @@ class Questions extends Component {
                         <div className="option">
                             <select className={"control dropdown" + (this.props.props.state.errors.day !== "" ? " error" : "")}  value={day} onChange={updateDay}>
                                 <option value="0" defaultValue>(Day)</option>
-                                {days.map(c =>
+                                {days.map((c, i) =>
                                 {
-                                    return (<option value={c}>{c}</option>)
+                                    return (<option value={c} key={i}>{c}</option>)
                                 })}
                             </select>
                             {this.props.props.state.errors.day !== "" && <p>{this.props.props.state.errors.day}</p>}

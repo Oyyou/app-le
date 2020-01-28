@@ -24,8 +24,7 @@ li {
 .link {
     padding: 20px;
     text-decoration: none;
-    font-size: calc(6px + 2vmin);
-    font-family: 'Roboto', sans-serif;
+    font-size: calc(4px + 2vmin);
 }
 
 .text {
@@ -48,3 +47,23 @@ li {
         height: 100%;
     }
 }
+
+@media (max-width: 740px) {
+    nav {
+        flex-flow: column;
+        height: 60px;
+        margin-bottom: 25px;
+    }
+
+    .logo {
+    
+        img {
+            width: auto;
+            height: 80%;
+        }
+    }
+
+    .link {
+        padding: 0 5px;
+    }
+  }

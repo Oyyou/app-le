@@ -75,6 +75,7 @@ class Calculator extends Component {
   render() {
     return (
       <>
+      <h1 className="header">Calculator</h1>
       <div className="App">
         <header className="App-header">
           <p>

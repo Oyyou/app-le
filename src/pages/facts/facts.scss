@@ -1,0 +1,18 @@
+.facts-container {
+    
+    p {
+        margin: 0 0 5px 0;
+        padding: 5px 5px 5px 15px;
+        position: relative;
+        color: #FF8DB3;
+        background-color: #EF1851;
+
+        &:before {
+            display: block;
+            position: absolute;
+            content: "•";
+            left: 5px;
+            top: 5px;
+        }
+    }
+}
